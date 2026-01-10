@@ -1,5 +1,6 @@
 streamlit
 streamlit-mic-recorder
+python-dotenv
 openai
 pypdf
 pandas
