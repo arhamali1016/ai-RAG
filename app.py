@@ -24,7 +24,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🎙️ Multi-Format Smart Research Agent")
+st.title("🎙️ Idraak: Multimodal Smart Analyst")
 
 # Sidebar: PDF, CSV, Image, GIF Support
 st.sidebar.header("📁 Data & Image Center")
@@ -61,4 +61,5 @@ if prompt := st.chat_input("Ask about anything..."):
         with st.spinner("Analyzing smartly..."):
             res = run_smart_ai(prompt, st.session_state.context, st.session_state.img_base64)
             st.markdown(res)
+
             st.session_state.messages.append({"role": "assistant", "content": res})
