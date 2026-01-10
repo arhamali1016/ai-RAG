@@ -24,7 +24,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🎙️ Idraak: Multimodal Smart Analyst")
+st.title("🎙️ SmartScan AI ")
 
 # Sidebar: PDF, CSV, Image, GIF Support
 st.sidebar.header("📁 Data & Image Center")
@@ -63,3 +63,4 @@ if prompt := st.chat_input("Ask about anything..."):
             st.markdown(res)
 
             st.session_state.messages.append({"role": "assistant", "content": res})
+
