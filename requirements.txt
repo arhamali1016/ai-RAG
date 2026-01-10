@@ -1,16 +1,5 @@
-# 🎙️ Elite Multi-Modal RAG Agent (GPT-4o Vision + Voice)
-
-A high-performance AI Research Assistant that understands **Voice, PDF, CSV, and Images** in multiple languages (English, Urdu, Roman Urdu).
-
-### 🚀 Core Engineering Features:
-- **Multimodal RAG Pipeline:** Context-aware responses using enterprise data (PDF/CSV).
-- **Vision Integration:** Analyzes Images and GIFs using GPT-4o Vision.
-- **Smart Voice UI:** Real-time voice query processing for hands-free interaction.
-- **Linguistic Intelligence:** Auto-detects and responds in the user's native tongue (Urdu/English).
-- **Agentic Workflow:** Built using modular Python architecture for scalability.
-
-### 🛠️ Tech Stack:
-- **Brain:** OpenAI GPT-4o / Gemini 1.5 Flash
-- **Framework:** Streamlit, Python
-- **Data:** PyPDF, Pandas (for CSV knowledge base)
-- **Deployment:** Streamlit Cloud / Docker
+streamlit
+streamlit-mic-recorder
+openai
+pypdf
+pandas
