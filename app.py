@@ -2,6 +2,16 @@ import streamlit as st
 from streamlit_mic_recorder import mic_recorder
 from medical_swarm import run_smart_ai, get_file_content, encode_image
 
+# Ye code footer aur menu ko gayab kar dega
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.set_page_config(page_title="Smart Vision Agent", layout="wide")
 
 # --- URDU READABILITY CSS ---
@@ -63,4 +73,5 @@ if prompt := st.chat_input("Ask about anything..."):
             st.markdown(res)
 
             st.session_state.messages.append({"role": "assistant", "content": res})
+
 
