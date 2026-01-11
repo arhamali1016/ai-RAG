@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_mic_recorder import mic_recorder
 from medical_swarm import run_smart_ai, get_file_content, encode_image
 
-# Ye code footer aur Streamlit branding ko bilkul mita dega
+# Ye CSS footer, deploy button, aur status widget ko mita dega
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -75,6 +75,7 @@ if prompt := st.chat_input("Ask about anything..."):
             st.markdown(res)
 
             st.session_state.messages.append({"role": "assistant", "content": res})
+
 
 
 
